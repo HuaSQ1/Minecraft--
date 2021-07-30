@@ -1,0 +1,72 @@
+Crate:
+  # 抽奖的类型，QuadCrate是指在自己周围出现一个抽奖平台，并出现4个箱子
+  CrateType: QuadCrate
+  CrateName: '&8疯狂抽奖'
+  StartingKeys: 0
+  InGUI: true
+  Slot: 25
+  OpeningBroadCast: true
+  BroadCast: '%Prefix%&6&l%Player% &7打开了 &b&l疯狂抽奖箱&7.'
+  Item: 'CHEST'
+  Name: '&b&l疯狂抽奖箱'
+  Lore:
+    - '&7这个箱子里有很多疯狂的玩意'
+    - '&7你拥有 &6%Keys% 把钥匙 &7来开启这个抽奖箱'
+    - '&7&l(&e&l!&7&l) 右键点击预览奖品'
+  PhysicalKey:
+    Name: '&b&l疯狂抽奖箱 &6&l的钥匙'
+    Lore:
+      - '&7这是一把疯狂的钥匙'
+      - '&7用它打开疯狂抽奖箱'
+    Item: 'TRIPWIRE_HOOK'
+    Glowing: True
+  Prizes:
+    1:
+      DisplayName: '&3&l稀有的胸甲'
+      DisplayItem: 'DIAMOND_CHESTPLATE'
+      DisplayAmount: 1
+      Lore:
+        - '&7这是一件稀有的胸甲'
+        - '&6&l几率: &c&l40%'
+      DisplayEnchantments:
+        - 'PROTECTION_ENVIRONMENTAL:5'
+        - 'DURABILITY:3'
+      MaxRange: 100
+      Chance: 40
+      Firework: false
+      Glowing: false
+      Items:
+        - 'Item:DIAMOND_CHESTPLATE, Amount:1, Name:&3稀有的胸甲, PROTECTION_ENVIRONMENTAL:5, DURABILITY:3'
+    2:
+      DisplayName: '&b&l疯狂 &4&l之剑'
+      DisplayItem: 'GOLD_SWORD'
+      DisplayAmount: 1
+      Lore:
+        - '&7这是一把疯狂的剑'
+        - '&6&l几率: &c&l35%'
+      DisplayEnchantments:
+        - 'DAMAGE_ALL:5'
+        - 'FIRE_ASPECT:1'
+      MaxRange: 100
+      Chance: 35
+      Firework: false
+      Glowing: false
+      Items:
+        - 'Item:GOLD_SWORD, Amount:1, Name:&b&l疯狂 &4&l之剑, DAMAGE_ALL:5, FIRE_ASPECT:1'
+      Messages:
+        - '&7你获得了一把 &b&l疯狂 &4&l之剑&7.'
+    3:
+      DisplayName: '&e&l$10,000金币'
+      DisplayItem: 'DOUBLE_PLANT'
+      DisplayAmount: 1
+      Lore:
+        - '&7相当多的一笔钱'
+        - '&6&l几率: &c&l20%'
+      MaxRange: 100
+      Chance: 20
+      Firework: true
+      Glowing: false
+      Commands:
+        - 'Eco give %Player% 10000'
+      Messages:
+        - '&7你获得了金币 &a$10,000&7.'

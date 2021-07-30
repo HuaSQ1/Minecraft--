@@ -1,0 +1,71 @@
+一字斗凯-龙:
+  Cooldown: 10
+  Skills:
+  - effect:explosion @Self
+  - potion{type=slow;duration=200;lvl=4} @Self
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f你锻造了一字斗凯-胸甲·龙!"}
+  - sound{s=BLOCK_ANVIL_USE;v=2;p=1} @Self
+  - delay 20
+  - effect:lightning @self
+  - effect:particles{p=lava;a=300;hS=1.5;vS=1.5} @Self
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f正在锻造!......"}
+  - message{m="&7&l[ &a&l进度 &7&l] &b&l-->> &a&l█&7&l████████"}
+  - sound{s=BLOCK_ANVIL_USE;v=2;p=1} @Self
+  - delay 20
+  - effect:lightning @self
+  - effect:particles{p=lava;a=300;hS=1.5;vS=1.5} @Self
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f正在锻造!......"}
+  - message{m="&7&l[ &a&l进度 &7&l] &b&l-->> &a&l██&7&l███████"}
+  - sound{s=BLOCK_ANVIL_USE;v=2;p=1} @Self
+  - delay 20
+  - effect:lightning @self
+  - effect:particles{p=lava;a=300;hS=1.5;vS=1.5} @Self
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f正在锻造!......"}
+  - message{m="&7&l[ &a&l进度 &7&l] &b&l-->> &a&l███&7&l██████"}
+  - sound{s=BLOCK_ANVIL_USE;v=2;p=1} @Self
+  - delay 20
+  - effect:lightning @self
+  - effect:particles{p=lava;a=300;hS=1.5;vS=1.5} @Self
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f正在锻造!......"}
+  - message{m="&7&l[ &a&l进度 &7&l] &b&l-->> &a&l████&7&l█████"}
+  - sound{s=BLOCK_ANVIL_USE;v=2;p=1} @Self
+  - delay 20
+  - effect:lightning @self
+  - effect:particles{p=lava;a=300;hS=1.5;vS=1.5} @Self
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f正在锻造!......"}
+  - message{m="&7&l[ &a&l进度 &7&l] &b&l-->> &a&l█████&7&l████"}
+  - sound{s=BLOCK_ANVIL_USE;v=2;p=1} @Self
+  - delay 20
+  - effect:lightning @self
+  - effect:particles{p=lava;a=300;hS=1.5;vS=1.5} @Self
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f正在锻造!......"}
+  - message{m="&7&l[ &a&l进度 &7&l] &b&l-->> &a&l██████&7&l███"}
+  - sound{s=BLOCK_ANVIL_USE;v=2;p=1} @Self
+  - delay 20
+  - effect:lightning @self
+  - effect:particles{p=lava;a=300;hS=1.5;vS=1.5} @Self
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f正在锻造!......"}
+  - message{m="&7&l[ &a&l进度 &7&l] &b&l-->> &a&l███████&7&l██"}
+  - sound{s=BLOCK_ANVIL_USE;v=2;p=1} @Self
+  - delay 20
+  - effect:lightning @self
+  - effect:particles{p=lava;a=300;hS=1.5;vS=1.5} @Self
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f正在锻造!......"}
+  - message{m="&7&l[ &a&l进度 &7&l] &b&l-->> &a&l████████&7&l█"}
+  - sound{s=BLOCK_ANVIL_USE;v=2;p=1} @Self
+  - delay 20
+  - effect:lightning @self
+  - effect:particles{p=lava;a=300;hS=1.5;vS=1.5} @Self
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f锻造成功!"}
+  - message{m="&7&l[ &a&l进度 &7&l] &b&l-->> &a&l█████████"}
+  - sound{s=BLOCK_ANVIL_USE;v=2;p=1} @Self
+  - effect:lightning @self
+  - effect:particles{p=lava;a=1000;hS=3.5;vS=3.5} @Self
+  - effect:particles{p=lava;amount=100;hS=1;vS=1;speed=1;yOffset=0} @Self
+  - effect:particles{p=flame;amount=100;hS=1;vS=1;speed=1;yOffset=0} @Self
+  - effect:particles{p=dragonbreath;amount=100;hS=1;vS=1;speed=1;yOffset=0} @Self
+  - effect:particles{p=largeexplode;amount=100;hS=1;vS=1;speed=1;yOffset=0} @Self
+  - delay 20
+  - sound{s=BLOCK_ANVIL_LAND;v=2;p=1} @Self
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &e打造成功!"}
+  - command{c="sx give 146 <mob.name>"}

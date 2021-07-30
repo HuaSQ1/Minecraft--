@@ -1,0 +1,458 @@
+Crate:
+  #抽奖模式，不同模式不同效果 (CSGO跑马灯/QuadCrate平台/QuickCrate快速箱子/Roulette乱码/CrateOnTheGo/FireCracker/Wonder混元归一/Wheel老虎机/War九选一/Cosmic几率等级(cosmic抽奖，与其它几种抽奖设置不同)).
+  # CSGO抽奖类型指的就是跑马灯类型的抽奖，每次抽出1个奖品
+  CrateType: Wonder
+  #抽奖箱的名字
+  CrateName: '&c武魂抽取'
+  Preview-Name: '&8奖品预览'
+  #当玩家第一次进服，他能获得几个开这个箱子的钥匙（某些特殊服可能会用到此功能）
+  StartingKeys: 0
+  InGUI: FALSE
+  #这个抽奖在菜的哪一个位置？
+  Slot: 1
+  #启用/禁止开启抽奖箱全服公告
+  OpeningBroadCast: false
+  BroadCast: '%Prefix%&6&l%Player% &7打开了 &7&l武魂抽取&7.'
+  Item: '1'
+  Name: '额'
+  Lore: 
+  PhysicalKey:
+    Name: '武魂抽奖卷'
+    Lore:
+      - '&7抽取武魂使用的卷轴' 
+    Item: '388'
+    Glowing: true
+  Prizes: #奖品设置
+    1:
+      DisplayName: "&3蓝电霸王龙"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 3
+      Commands:
+        - 'SX give 110 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+    2:
+      DisplayName: "&d昊天锤"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 3
+      Commands:
+        - 'SX give 3 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+    3:
+      DisplayName: "&e六翼天使"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 1
+      Commands:
+        - 'SX give 38 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+    4:
+      DisplayName: "&0吞噬龙"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 3
+      Commands:
+        - 'SX give 113 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+    5:
+      DisplayName: "&b蓝银皇"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 3
+      Commands:
+        - 'SX give 41 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+    6:
+      DisplayName: "&c幽冥剑"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 5
+      Commands:
+        - 'SX give 121 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+    7:
+      DisplayName: "&e邪眸白虎"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 5
+      Commands:
+        - 'SX give 23 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+    8:
+      DisplayName: "&c邪火凤凰"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 5
+      Commands:
+        - 'SX give 5 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+    9:
+      DisplayName: "&6七杀剑"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 3
+      Commands:
+        - 'SX give 8 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+    10:
+      DisplayName: "&2碧鳞蛇皇"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 5
+      Commands:
+        - 'SX give 67 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+    11:
+      DisplayName: "&b破魂枪"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 6
+      Commands:
+        - 'SX give 19 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+    12:
+      DisplayName: "&6大力猩猩"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 6
+      Commands:
+        - 'SX give 89 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+    13:
+      DisplayName: "&6奇茸通天菊"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 6
+      Commands:
+        - 'SX give 43 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+    14:
+      DisplayName: "&0鬼魅"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 6
+      Commands:
+        - 'SX give 59 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+    15:
+      DisplayName: "&1残梦"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 6
+      Commands:
+        - 'SX give 60 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+    16:
+      DisplayName: "&2蛇矛"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 6
+      Commands:
+        - 'SX give 12 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+    17:
+      DisplayName: "&d骨龙"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 5
+      Commands:
+        - 'SX give 122 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+    18:
+      DisplayName: "&2千击矛"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 6
+      Commands:
+        - 'SX give 13 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+    19:
+      DisplayName: "&b龙纹棍"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 6
+      Commands:
+        - 'SX give 14 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+    20:
+      DisplayName: "&a长鞭"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 6
+      Commands:
+        - 'SX give 15 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+    21:
+      DisplayName: "&0幽冥灵猫"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 5
+      Commands:
+        - 'SX give 35 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+    22:
+      DisplayName: "&a血魔斧"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 6
+      Commands:
+        - 'SX give 9 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+    23:
+      DisplayName: "&0追魂剑"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 5
+      Commands:
+        - 'SX give 10 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+    24:
+      DisplayName: "&a星罗棋"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 6
+      Commands:
+        - 'SX give 11 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+    25:
+      DisplayName: "&0乌龙盾"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 5
+      Commands:
+        - 'SX give 16 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+    26:
+      DisplayName: "§b§l龙杖"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 6
+      Commands:
+        - 'SX give 18 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+    27:
+      DisplayName: "§0§l黑暗魔虎"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 5
+      Commands:
+        - 'SX give 20 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+    28:
+      DisplayName: "§0§l鬼影豹皇"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 5
+      Commands:
+        - 'SX give 21 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+    29:
+      DisplayName: "§e§l黄金狮王"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 6
+      Commands:
+        - 'SX give 22 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+    30:
+      DisplayName: "§c§l火焰狮王"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 5
+      Commands:
+        - 'SX give 24 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+    31:
+      DisplayName: "&a星罗棋"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 6
+      Commands:
+        - 'SX give 11 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+    32:
+      DisplayName: "§6§l三生镇魂鼎"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 5
+      Commands:
+        - 'SX give 26 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+    33:
+      DisplayName: "§6§l神圣天使"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 6
+      Commands:
+        - 'SX give 29 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+    34:
+      DisplayName: "§c§l紫影狮"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 6
+      Commands:
+        - 'SX give 32 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+    35:
+      DisplayName: "§0§l死灵圣法神"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 5
+      Commands:
+        - 'SX give 31 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+    36:
+      DisplayName: "§6§l§c§l十首凤凰"
+      DisplayItem: '276'
+      DisplayAmount: 1
+      Lore:
+        - '&7武魂'
+      MaxRange: 100
+      Chance: 6
+      Commands:
+        - 'SX give 48 %Player%'
+      Messages:
+        - '&C[&E武魂抽取&C]&A恭喜你抽中属于你的武魂'
+           

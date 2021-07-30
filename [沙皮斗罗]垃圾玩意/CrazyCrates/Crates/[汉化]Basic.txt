@@ -1,0 +1,146 @@
+Crate:
+  #抽奖模式，不同模式不同效果 (CSGO跑马灯/QuadCrate平台/QuickCrate快速箱子/Roulette乱码/CrateOnTheGo/FireCracker/Wonder混元归一/Wheel老虎机/War九选一/Cosmic几率等级(cosmic抽奖，与其它几种抽奖设置不同)).
+  # CSGO抽奖类型指的就是跑马灯类型的抽奖，每次抽出1个奖品
+  CrateType: CSGO 
+  #抽奖箱的名字
+  CrateName: '&8普通抽奖箱' 
+  # 预览该抽奖奖品时的GUI标题
+  Preview-Name: '&8奖品预览'
+  #当玩家第一次进服，他能获得几个开这个箱子的钥匙（某些特殊服可能会用到此功能）
+  StartingKeys: 0 
+  #这种抽奖是在GUI菜单进行的吗 (如果抽奖模式是 QuickCrate/CrateOnTheGo/FireCracker 那么抽奖将失效，因为它们不能在GUI菜单里进行)
+  InGUI: true 
+  #这个抽奖在菜单中的哪一个位置？
+  Slot: 21
+  #启用/禁止开启抽奖箱全服公告
+  OpeningBroadCast: true 
+  BroadCast: '%Prefix%&6&l%Player% &7打开了一个 &7&l普通抽奖箱&7.' 
+  #这个抽奖按钮在菜单中的物品种类和名字
+  Item: 'CHEST' 
+  # 这个抽奖按钮在GUI中会发光吗
+  Glowing: false 
+  Name: '&7&l普通抽奖箱' 
+  Lore: #按钮的lore
+    - '&7这个箱子里都有些什么呢？' 
+    - '&7你拥有 &6%Keys% 把钥匙 &7来开启这个抽奖箱'
+    - '&7&l(&e&l!&7&l) 右键点击预览奖品'
+  # 打开此抽奖箱的“真实”物品钥匙的属性，管理员使用/ccrate admin可以获得钥匙
+  PhysicalKey:
+    Name: '&7&l普通抽奖箱 &b&l的钥匙' 
+    Lore:
+      - '&7一把普普通通的钥匙' 
+      - '&7用它打开普通抽奖箱'
+    Item: 'TRIPWIRE_HOOK' 
+    #钥匙是否附魔
+    Glowing: True 
+#         以下内容仅针对于 Cosmic 几率等级模式的抽奖箱，建议参考Galactic.yml配置文件
+#############################################
+#  Tiers: #The tiers in the Crate
+#    Basic: #The Config Name for the Crate
+#      Name: '&8Basic Prize' #The in-game name of the Crate
+#      Color: 7 #Use the MetaData for the color of the glass
+#      Chance: 80 #Chance of that item getting picked. It would be 80/100 chance because MaxRange is 100.
+#      MaxRange: 100 #The max range that the chance will go though.
+#    UnCommon:
+#      Name: '&aUnCommon Prize'
+#      Color: 5
+#      Chance: 55
+#      MaxRange: 100
+#    Rare:
+#      Name: '&4Rare Prize'
+#      Color: 14
+#      Chance: 20
+#      MaxRange: 100
+#############################################
+#
+  Prizes: #奖品设置，以下列出了3种奖品
+    1:
+      #奖品的名字
+      DisplayName: '&7&l草方块' 
+      #奖品的种类
+      DisplayItem: 'GRASS' 
+      #预览奖品的数量(不是实际赢得的数量)
+      DisplayAmount: 1 
+      Lore: #物品的lore
+        - '&7这些只是普通的草方块'
+        - '&6&l几率: &c&l40%'
+      #抽奖的总几率，总几率是100% 
+      MaxRange: 100 
+      #抽到此物品的几率，几率是40/100
+      Chance: 40 
+      #赢得此奖品，是否出现烟花效果
+      Firework: false 
+      #此物品是否附魔
+      Glowing: false 
+      #如果物品的种类是397:3的话，下面这行可以写上正版玩家的名字，即显示正版玩家的头颅
+      Player: '' 
+      # 这个物品上有“无法破坏”NBT标签吗
+      Unbreakable: false 
+#        以下内容仅针对于 Cosmic 模式的抽奖箱，建议参考Galactic.yml配置文件
+#############################################
+#       Tiers: #该奖品所属的几率等级
+#         - 'Basic'
+#         - 'UnCommon'
+#         - 'Rare'
+#############################################
+      #玩家获得的奖品（不想给玩家实物奖品的话请删去这行）
+      #请参照下列各式
+      #Item: 物品ID
+      #Amount: 物品数量
+      #Name: 物品名字，允许彩色代码
+      #Lore: 物品的lore,允许彩色代码,使用英文逗号,隔开行
+      Items:
+        - 'Item:GRASS, Amount:32, Name:&7&l草方块'
+      #当玩家赢得这个物品时执行的指令（不想执行指令的话删去这行）
+      # %Player% 是玩家变量
+      Commands:
+        - 'broadcast &6&l%Player% &7通过抽奖获得了一些草方块'
+      #当玩家赢得这个奖品时，只有该玩家能看到的提示语
+      #不想要的话请删除这行
+      Messages:
+        - '&7恭喜你！你赢得了 &7&l草方块&7.'
+      # 有以下权限的玩家禁止获得此奖品
+      BlackListed-Permissions: {}  
+    2:
+      DisplayName: '&b&l普通的头盔'
+      DisplayItem: 'GOLD_HELMET'
+      DisplayAmount: 1
+      Lore:
+        - '&7一个普通的头盔'
+        - '&6&l几率: &c&l60%'
+      DisplayEnchantments: #可以给预览物品增加附魔
+        - 'PROTECTION_ENVIRONMENTAL:1'
+        - 'OXYGEN:1'
+      MaxRange: 100
+      Chance: 60
+      Firework: false
+      Glowing: false
+      Player: ''
+      Items:
+        - 'Item:GOLD_HELMET, Amount:1, Name:&b普通的头盔, PROTECTION_ENVIRONMENTAL:1, OXYGEN:1'
+      BlackListed-Permissions: {}
+    3:
+      DisplayName: '&e&l$1,000金币'
+      DisplayItem: 'DOUBLE_PLANT:0'
+      DisplayAmount: 1
+      Lore:
+        - '&7这可是很多的钱'
+        - '&6&l几率: &c&l20%'
+      MaxRange: 100
+      Chance: 20
+      Firework: true
+      Glowing: false
+      Player: ''
+      Commands:
+        - 'eco give %Player% 1000'
+      Messages:
+        - '&7你赢得了金钱 &a$1,000&7.'
+      BlackListed-Permissions:
+        - 'crazycrates.blacklist.basic.3'  
+      Alternative-Prize:
+        Toggle: true
+        Messages:
+          - '&8[&b疯狂抽奖&8]: &7你已经获得过那个奖励了'
+        Commands:
+          - 'give %player% 371 16'
+        Items: {}  

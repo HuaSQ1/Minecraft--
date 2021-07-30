@@ -1,0 +1,121 @@
+一字胸甲-龙锻造书:
+  Id: 337
+  Display: '&7[&e&L道具&7]&b&l一字胸甲-龙|锻造书'
+  Lore:
+  - '§7§m==§7< §b| §7>§m============§7 [ §d§l物品介绍 §7] §m============§7< §b| §7>§m=='
+  - '§7[§6类型§7]: &f&l道具'                   
+  - '§7§m==§7< §b| §7>§m============§7 [ §d§l物品简介 §7] §m============§7< §b| §7>§m=='
+  - '&8&l>> &c&l锻造一字胸甲-龙的材料之一!'
+  - '&08'
+  Options:
+    Unbreakable: true
+  Enchantments:
+  - DAMAGE_ALL:5
+  Attributes:
+    Hand:
+      MovementSpeed: 64
+      AttackSpeed: 64
+二字胸甲-龙月锻造书:
+  Id: 337
+  Display: '&7[&e&L道具&7]&b&l二字胸甲-龙月|锻造书'
+  Lore:
+  - '§7§m==§7< §b| §7>§m============§7 [ §d§l物品介绍 §7] §m============§7< §b| §7>§m=='
+  - '§7[§6类型§7]: &f&l道具'                   
+  - '§7§m==§7< §b| §7>§m============§7 [ §d§l物品简介 §7] §m============§7< §b| §7>§m=='
+  - '&8&l>> &c&l锻造二字胸甲-龙月的材料之一!'
+  - '&0220'
+  Options:
+    Unbreakable: true
+  Enchantments:
+  - DAMAGE_ALL:5
+  Attributes:
+    Hand:
+      MovementSpeed: 64
+      AttackSpeed: 64
+三字胸甲-龙月语锻造书:
+  Id: 337
+  Display: '&7[&e&L道具&7]&b&l三字胸甲-龙月语|锻造书'
+  Lore:
+  - '§7§m==§7< §b| §7>§m============§7 [ §d§l物品介绍 §7] §m============§7< §b| §7>§m=='
+  - '§7[§6类型§7]: &f&l道具'                   
+  - '§7§m==§7< §b| §7>§m============§7 [ §d§l物品简介 §7] §m============§7< §b| §7>§m=='
+  - '&8&l>> &c&l锻造三字胸甲-龙月语的材料之一!'
+  - '&0208'
+  Options:
+    Unbreakable: true
+  Enchantments:
+  - DAMAGE_ALL:5
+  Attributes:
+    Hand:
+      MovementSpeed: 64
+      AttackSpeed: 64
+百锻金属:
+  Id: 337
+  Display: '&7[&e&L材料&7]&e&l百锻金属'
+  Lore:
+  - '§7§m==§7< §b| §7>§m============§7 [ §d§l物品介绍 §7] §m============§7< §b| §7>§m=='
+  - '§7[§6类型§7]: &f&l材料'                   
+  - '§7§m==§7< §b| §7>§m============§7 [ §d§l物品简介 §7] §m============§7< §b| §7>§m=='
+  - '&8&l>> &c&l锻造一字胸甲-龙的材料之一!'
+  - '&096'
+  Options:
+    Unbreakable: true
+  Enchantments:
+  - DAMAGE_ALL:5
+  Attributes:
+    Hand:
+      MovementSpeed: 64
+      AttackSpeed: 64
+千锻金属:
+  Id: 337
+  Display: '&7[&e&L材料&7]&e&l千锻金属'
+  Lore:
+  - '§7§m==§7< §b| §7>§m============§7 [ §d§l物品介绍 §7] §m============§7< §b| §7>§m=='
+  - '§7[§6类型§7]: &f&l材料'                   
+  - '§7§m==§7< §b| §7>§m============§7 [ §d§l物品简介 §7] §m============§7< §b| §7>§m=='
+  - '&8&l>> &c&l锻造二字胸甲-龙月的材料之一!'
+  - '&0237'
+  Options:
+    Unbreakable: true
+  Enchantments:
+  - DAMAGE_ALL:5
+  Attributes:
+    Hand:
+      MovementSpeed: 64
+      AttackSpeed: 64
+
+灵锻金属:
+  Id: 399
+  Display: '&7[&e&L材料&7]&e&l灵锻金属'
+  Lore:
+  - '§7§m==§7< §b| §7>§m============§7 [ §d§l物品介绍 §7] §m============§7< §b| §7>§m=='
+  - '§7[§6类型§7]: &f&l材料'                   
+  - '§7§m==§7< §b| §7>§m============§7 [ §d§l物品简介 §7] §m============§7< §b| §7>§m=='
+  - '&8&l>> &c&l锻造三字胸甲-龙月语的材料之一!'
+  - '&09'
+  Options:
+    Unbreakable: true
+  Enchantments:
+  - DAMAGE_ALL:5
+  Attributes:
+    Hand:
+      MovementSpeed: 64
+      AttackSpeed: 64
+
+天锻金属:
+  Id: 399
+  Display: '&7[&e&L材料&7]&e&l天锻金属'
+  Lore:
+  - '§7§m==§7< §b| §7>§m============§7 [ §d§l物品介绍 §7] §m============§7< §b| §7>§m=='
+  - '§7[§6类型§7]: &f&l材料'                   
+  - '§7§m==§7< §b| §7>§m============§7 [ §d§l物品简介 §7] §m============§7< §b| §7>§m=='
+  - '&8&l>> &c&l锻造高级斗铠的材料之一!'
+  - '&08'
+  Options:
+    Unbreakable: true
+  Enchantments:
+  - DAMAGE_ALL:5
+  Attributes:
+    Hand:
+      MovementSpeed: 64
+      AttackSpeed: 64

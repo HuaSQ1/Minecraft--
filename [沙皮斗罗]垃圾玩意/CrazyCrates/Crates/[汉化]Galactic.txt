@@ -1,0 +1,163 @@
+Crate:
+  #抽奖的种类，Cosmic表示你可以在GUI菜单中抽4个奖品的模式
+  CrateType: Cosmic 
+  #抽奖按钮的名字
+  CrateName: '&8银河抽奖箱' 
+  #当玩家第一次进服，他能获得几个开这个箱子的钥匙（某些特殊服可能会用到此功能）
+  StartingKeys: 0 
+  #这种抽奖是在GUI菜单进行的吗 (如果抽奖模式是 QuickCrate/CrateOnTheGo/FireCracker 那么抽奖将失效，因为它们不能在GUI菜单里进行)
+  InGUI: true 
+  Slot: 23
+  OpeningBroadCast: False 
+  BroadCast: '' 
+  Item: 'ENDER_CHEST' 
+  Name: '&d&l银河抽奖箱' 
+  Lore: #物品的lore
+    - '&7本抽奖箱奖品分几率等级' 
+    - '&7你拥有4次机会测试你的运气！'
+    - '&7你拥有 &6%Keys% 把钥匙 &7来开启这个抽奖箱'
+    - '&7&l(&e&l!&7&l) 右键点击预览奖品'
+  # 打开此抽奖箱的“真实”物品钥匙的属性    
+  PhysicalKey:
+    Name: '&d&l银河抽奖箱 &b&l的钥匙' 
+    Lore:
+      - '&7一把神奇的钥匙' 
+      - '&7用它打开银河抽奖箱'
+    Item: 'TRIPWIRE_HOOK' 
+    Glowing: True
+  Tiers: 
+    #Cosmic 模式的特殊之处在于其奖品分几率等级
+    #以下是三种等级 不同等级包含不同奖品
+    Basic: 
+      Name: '&8普通奖励' 
+      #该几率等级所代表的彩色玻璃，请填写彩色玻璃的子ID
+      Color: 7 
+      #获得该等级奖品的几率
+      Chance: 80 
+      #这是总几率，不建议改动
+      MaxRange: 100 
+    UnCommon:
+      Name: '&a特殊奖励'
+      Color: 5
+      Chance: 55
+      MaxRange: 100
+    Rare:
+      Name: '&4绝版奖励'
+      Color: 14
+      Chance: 20
+      MaxRange: 100
+  Prizes: 
+    1:
+      DisplayName: '&d&l银河草方块' 
+      DisplayItem: 'GRASS' 
+      DisplayAmount: 1 
+      Lore: 
+        - '&7虽然你这么说了……'
+        - '&7但它还是草方块'
+        - '&6&l几率: &c&l40%'
+      MaxRange: 100 
+      Chance: 40 
+      Firework: false 
+      Glowing: false
+      Tiers: #这是该物品所属的几率等级
+        - 'Basic'
+        - 'UnCommon'
+        - 'Rare'
+      #玩家获得的奖品（不想给玩家实物奖品的话请删去这行）
+      #请参照下列各式
+      #Item: 物品ID
+      #Amount: 物品数量
+      #Name: 物品名字，允许彩色代码
+      #Lore: 物品的lore,允许彩色代码,使用英文逗号,隔开行
+      Items:
+        - 'Item:GRASS, Amount:32, Name:&d&l银河草方块'
+      Commands:
+        - 'broadcast &6&l%Player% &7获得了一些银河草方块'
+    2:
+      DisplayName: '&b&l普通的头盔'
+      DisplayItem: 'GOLD_HELMET'
+      DisplayAmount: 1
+      Lore:
+        - '&7这是一个普通的头盔'
+        - '&6&l几率: &c&l60%'
+      DisplayEnchantments:
+        - 'PROTECTION_ENVIRONMENTAL:1'
+        - 'OXYGEN:1'
+      MaxRange: 100
+      Chance: 60
+      Firework: false
+      Glowing: false
+      Tiers:
+        - 'Basic'
+        - 'UnCommon'
+        - 'Rare'
+      Items:
+        - 'Item:GOLD_HELMET, Amount:1, Name:&b普通的头盔, PROTECTION_ENVIRONMENTAL:1, OXYGEN:1'
+    3:
+      DisplayName: '&e&l$1,000金币'
+      DisplayItem: 'DOUBLE_PLANT:0'
+      DisplayAmount: 1
+      Lore:
+        - '&7很多的一笔钱'
+        - '&6&l几率: &c&l20%'
+      MaxRange: 100
+      Chance: 20
+      Firework: true
+      Glowing: false
+      Tiers:
+        - 'Basic'
+        - 'UnCommon'
+        - 'Rare'
+      Commands:
+        - 'eco give %Player% 1000'
+    4:
+      DisplayName: '&b&l疯狂 &4&l之剑'
+      DisplayItem: 'GOLD_SWORD'
+      DisplayAmount: 1
+      Lore:
+        - '&7这是一把相当疯狂的剑'
+        - '&6&l几率: &c&l10%'
+      DisplayEnchantments:
+        - 'DAMAGE_ALL:5'
+        - 'FIRE_ASPECT:1'
+      MaxRange: 100
+      Chance: 10
+      Firework: false
+      Glowing: false
+      # 注意看，此处的几率等级只有稀有等级才能抽到
+      Tiers:
+        - 'Rare'
+      Items:
+        - 'Item:GOLD_SWORD, Amount:1, Name:&b&lCrazy &4&lSword, DAMAGE_ALL:5, FIRE_ASPECT:1'
+    5:
+      DisplayName: '&e&l$1,000,000金币'
+      DisplayItem: '175'
+      DisplayAmount: 1
+      Lore:
+        - '&7这可是非常多的一笔钱'
+        - '&6&l几率: &c&l20%'
+      MaxRange: 100
+      Chance: 20
+      Firework: true
+      Glowing: false
+      Tiers:
+        - 'Rare'
+      Commands:
+        - 'Eco give %Player% 1000000'
+    6:
+      DisplayName: '&b&l疯狂抽奖箱 &6&l的钥匙 &7(x2)'
+      DisplayItem: 'DOUBLE_PLANT:0'
+      DisplayAmount: 1
+      Lore:
+        - '&7一把疯狂的钥匙'
+        - '&7用它打开疯狂抽奖箱'
+        - '&6&l几率: &c&l10%'
+      MaxRange: 100
+      Chance: 10
+      Firework: true
+      Glowing: true
+      Tiers:
+        - 'UnCommon'
+        - 'Rare'
+      Commands:
+        - 'ccrate give physical crazy 2 %Player%'

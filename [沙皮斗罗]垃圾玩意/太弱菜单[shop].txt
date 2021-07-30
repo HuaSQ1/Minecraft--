@@ -1,0 +1,203 @@
+Title: '&e&l商场'
+Shape:
+- 'UIO      '
+- 'JKL# B2  '
+- '         '
+Buttons:
+  '#':
+    display:
+      name: §4[§6神王武魂§4] §8毁灭§4之矛
+      lore:
+      - §7§m==§7< §b| §7>§m============§7 [ §d§l武魂属性 §7] §m============§7< §b| §7>§m==
+      - '§6◆§7攻击力: §a60000'
+      - '§c◆§7暴击几率: §a100%'
+      - '§c◆§7暴击伤害: §a400%'
+      - '§e◆§7命中几率: §a100%'
+      - §a◆§7吸血几率：§a100%
+      - §7§m==§7< §b| §7>§m============§7 [ §b§l武魂信息 §7] §m============§7< §b| §7>§m==
+      - '§7[§6品质§7]: §b神武'
+      - '§7[§6类型§7]: §c器武魂'
+      - '§7[§6魂力§7]: §e0 '
+      - §7§m==§7< §b| §7>§m============§7 [ §6§l神界魂环 §7] §m============§7< §b| §7>§m==
+      - §7§l<< §b§l| §7§l◆ §6§l神环镶嵌孔 §7§l◆ §b§l| §7§l>>
+      - §7§l<< §b§l| §7§l◆ §6§l神环镶嵌孔 §7§l◆ §b§l| §7§l>>
+      - §7§l<< §b§l| §7§l◆ §6§l神环镶嵌孔 §7§l◆ §b§l| §7§l>>
+      - §7§l<< §b§l| §7§l◆ §6§l神环镶嵌孔 §7§l◆ §b§l| §7§l>>
+      - §7§l<< §b§l| §7§l◆ §6§l神环镶嵌孔 §7§l◆ §b§l| §7§l>>
+      - §7§l<< §b§l| §7§l◆ §6§l神环镶嵌孔 §7§l◆ §b§l| §7§l>>
+      - §7§l<< §b§l| §7§l◆ §6§l神环镶嵌孔 §7§l◆ §b§l| §7§l>>
+      - §7§l<< §b§l| §7§l◆ §6§l神环镶嵌孔 §7§l◆ §b§l| §7§l>>
+      - §7§l<< §b§l| §7§l◆ §6§l神环镶嵌孔 §7§l◆ §b§l| §7§l>>
+      - §7§m==§7< §b| §7>§m============§7 [ §c§l附加魂环 §7] §m============§7< §b| §7>§m==
+      - §04
+      - ''
+      - '&4价格: &e10e'
+      - ''
+      - '&3左键进行购买 '
+      - ''
+      mats: DIAMOND_SWORD
+    actions:
+      all: ['sound: BLOCK_NOTE_BLOCK_PLING-1-2']
+      left:
+        - 'Close'
+        - 'Tell: &c你没有足够的钱！_||_Break:<Requirement: %vault_eco_balance% < 1000000000>'
+        - 'Console: eco take %player_name% 1000000000'
+        - 'Console: sx give 神王武魂 %player_name% '
+        - 'Title: <title=&3&l购买成功><subtitle=&8[&a&l+&8] &c&l&8毁灭&4之矛 &7* &61>'
+  'B':
+    update: 20
+    display:
+      mats: 'cooked_beef'
+      lore:
+        - - ''
+          - '&f· &7购买: &e10$'
+          - ''
+          - '&3左键进行购买'
+          - ''
+    actions:
+      all: ['sound: BLOCK_NOTE_BLOCK_PLING-1-2']
+      left:
+        - 'Close'
+        - 'Tell: &c你没有足够的钱！_||_Break:<Requirement: %vault_eco_balance% < 100>'
+        - 'Console: eco take %player_name% 10'
+        - 'Console: give %player_name% beef 1'
+        - 'Title: <title=&3&l购买成功><subtitle=&8[&a&l+&8] &c&l牛排 &7* &61>'
+  '2':
+    update: 20
+    display:
+      mats: 'cooked_beef'
+      lore:
+        - - ''
+          - '&f· &7购买: &e600$&a(一组)'
+          - ''
+          - '&3左键进行购买'
+          - ''
+    actions:
+      all: ['sound: BLOCK_NOTE_BLOCK_PLING-1-2']
+      left:
+        - 'Close'
+        - 'Tell: &c你没有足够的钱！_||_Break:<Requirement: %vault_eco_balance% < 100>'
+        - 'Console: eco take %player_name% 600'
+        - 'Console: give %player_name% beef 64'
+        - 'Title: <title=&3&l购买成功><subtitle=&8[&a&l+&8] &c&l牛排 &7* &664>'
+  'U':
+    update: 20
+    display:
+      mats: '336'
+      lore:
+        - - ''
+          - '&e兑换&f铜魂币&7(实体)'
+          - ''
+          - '&f· &7兑换: &e100$'
+          - ''
+          - '&3左键进行兑换'
+          - ''
+    actions:
+      all: ['sound: BLOCK_NOTE_BLOCK_PLING-1-2']
+      left:
+        - 'Close'
+        - 'Tell: &c你没有足够的钱！_||_Break:<Requirement: %vault_eco_balance% < 100>'
+        - 'Console: eco take %player_name% 100'
+        - 'Console: mm i give %player_name% 铜魂币 1'
+        - 'Title: <title=&3&l兑换成功><subtitle=&8[&a&l+&8] &c&l铜魂币 &7* &61>'
+  'J':
+    update: 20
+    display:
+      mats: '336'
+      lore:
+        - - ''
+          - '&e兑换&f铜魂币*64&7(实体)'
+          - ''
+          - '&f· &7兑换: &e6400$'
+          - ''
+          - '&3左键进行兑换'
+          - ''
+    actions:
+      all: ['sound: BLOCK_NOTE_BLOCK_PLING-1-2']
+      left:
+        - 'Close'
+        - 'Tell: &c你没有足够的钱！_||_Break:<Requirement: %vault_eco_balance% < 100>'
+        - 'Console: eco take %player_name% 6400'
+        - 'Console: mm i give %player_name% 铜魂币 64'
+        - 'Title: <title=&3&l兑换成功><subtitle=&8[&a&l+&8] &c&l铜魂币 &7* &664>'
+  'I':
+    update: 20
+    display:
+      mats: 'iron_ingot'
+      lore:
+      lore:
+        - - ''
+          - '&e兑换&f铁魂币*1&7(实体)'
+          - ''
+          - '&f· &7兑换: &e1000$'
+          - ''
+          - '&3左键进行兑换'
+          - ''
+    actions:
+      all: ['sound: BLOCK_NOTE_BLOCK_PLING-1-2']
+      left:
+        - 'Close'
+        - 'Tell: &c你没有足够的钱！_||_Break:<Requirement: %vault_eco_balance% < 100>'
+        - 'Console: eco take %player_name% 1000'
+        - 'Console: mm i give %player_name% 铁魂币 1'
+        - 'Title: <title=&3&l兑换成功><subtitle=&8[&a&l+&8] &c&l铁魂币 &7* &61>'
+  'K':
+    update: 20
+    display:
+      mats: 'iron_ingot'
+      lore:
+        - - ''
+          - '&e兑换&f铁魂币*64&7(实体)'
+          - ''
+          - '&f· &7兑换: &e64000$'
+          - ''
+          - '&3左键进行兑换'
+          - ''
+    actions:
+      all: ['sound: BLOCK_NOTE_BLOCK_PLING-1-2']
+      left:
+        - 'Close'
+        - 'Tell: &c你没有足够的钱！_||_Break:<Requirement: %vault_eco_balance% < 100>'
+        - 'Console: eco take %player_name% 64000'
+        - 'Console: mm i give %player_name% 铁魂币 64'
+        - 'Title: <title=&3&l兑换成功><subtitle=&8[&a&l+&8] &c&l铁魂币 &7* &664>'
+  'O':
+    update: 20
+    display:
+      mats: 'gold_ingot'
+      lore:
+        - - ''
+          - '&e兑换&f金魂币*1&7(实体)'
+          - ''
+          - '&f· &7兑换: &e10000$'
+          - ''
+          - '&3左键进行兑换'
+          - ''
+    actions:
+      all: ['sound: BLOCK_NOTE_BLOCK_PLING-1-2']
+      left:
+        - 'Close'
+        - 'Tell: &c你没有足够的钱！_||_Break:<Requirement: %vault_eco_balance% < 100>'
+        - 'Console: eco take %player_name% 10000'
+        - 'Console: mm i give %player_name% 金魂币 1'
+        - 'Title: <title=&3&l兑换成功><subtitle=&8[&a&l+&8] &c&l金魂币 &7* &61>'
+  'L':
+    update: 20
+    display:
+      mats: 'gold_ingot'
+      lore:
+        - - ''
+          - '&e兑换&f金魂币*64&7(实体)'
+          - ''
+          - '&f· &7兑换: &e640000$'
+          - ''
+          - '&3左键进行兑换'
+          - ''
+    actions:
+      all: ['sound: BLOCK_NOTE_BLOCK_PLING-1-2']
+      left:
+        - 'Close'
+        - 'Tell: &c你没有足够的钱！_||_Break:<Requirement: %vault_eco_balance% < 100>'
+        - 'Console: eco take %player_name% 640000'
+        - 'Console: mm i give %player_name% 金魂币 64'
+        - 'Title: <title=&3&l兑换成功><subtitle=&8[&a&l+&8] &c&l金魂币 &7* &664>'

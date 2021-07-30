@@ -1,0 +1,42 @@
+# 
+# These example files show you some VERY basic meta skills.
+# You can copy and expand them however you'd like. 
+山龙王拉扯:
+  Skills:
+  - forcepull{spread=1} @PlayersInRadius{r=30}
+山龙王火焰弹:
+  Skills:
+  - effect:particles{p=lava;a=50;hS=1;vS=1}
+  - effect:sound{s=random.explode;v=1;p=0}
+  - damage{a=3000;ignoreArmor=false}
+山龙王导弹:
+  Skills:
+  - missile{ot=Homer_TICK4;oh=Homer_HIT4;v=8;i=1;hR=1;vR=1;in=0.75}
+Homer_TICK4:
+  Skills:
+  - effect:particles{p=lava;a=1} @origin
+Homer_HIT4:
+  Skills:
+  - effect:particles{p=lava;a=50;hS=1;vS=1}
+  - effect:sound{s=random.explode;v=1;p=0}
+  - damage{a=4000;i=false}
+山龙王光波:
+  Skills:
+  - projectile{onTick=IceBolt-Tick6;onHit=IceBolt-Hit6;v=8;i=1;hR=1;vR=1}
+IceBolt-Tick6:
+  Skills:
+  - effect:particles{p=largeexplode;amount=20;speed=0;hS=0.2;vS=0.2} @origin
+IceBolt-Hit6:
+  Skills:
+  - damage{a=5000;i=false}
+  - potion{type=SLOW;duration=100;lvl=8}
+山龙王粒子球:  
+  Skills:
+  - effect:particlebox{particle=flame;amount=200;radius=8}
+山龙王出生:
+  Skills:
+  - sendtitle{title="&4&l注意！";subtitle="&4&l山龙王:&a&l准备感受龙王的恐惧吧！";d=200}  
+山龙王回血:
+  Cooldown: 0
+  Skills:
+  - heal{amount=50000}

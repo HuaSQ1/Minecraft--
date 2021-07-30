@@ -1,0 +1,252 @@
+天尊神罚:
+  Cooldown: 100
+  Skills:
+  - sendtitle{title="&d&l≮&0?&f&l<&a&8&k2&a[&a<mob.name>&a]&8&k2&f&l>&0?&d&l≯";subtitle="&7&l< &e&l天尊神罚! &7&l>";d=300}
+  - delay 10
+  - effect:lightning @LivingEntitiesInRadius
+  - effect:lightning @LivingEntitiesInRadius
+  - effect:lightning @LivingEntitiesInRadius
+  - damage{a=3000000000000;i=true;pk=true} @LivingEntitiesInRadius{r=50}
+  - effect:ender @self ~onTimer:20
+  - delay 1
+  - damage{a=4000000000000;i=true;pk=true} @LivingEntitiesInRadius{r=50}
+  - effect:particles{particle=largesmoke;amount=205;hS=3;vS=3;speed=0.5} @self
+  - delay 1
+  - effect:particlesphere{particle=flame;amount=200;radius=5} @LivingEntitiesInRadius{r=10}
+  - effect:ender @self ~onTimer:20
+  - delay 1
+  - damage{a=4000000000000;i=true;pk=true} @LivingEntitiesInRadius{r=50}
+  - effect:particles{particle=largesmoke;amount=205;hS=3;vS=3;speed=0.5} @self
+  - delay 1
+  - effect:particlering{particle=flame;radius=20;points=32;amount=1;hS=1;vS=0} @LivingEntitiesInRadius{r=10}
+  - effect:ender @self ~onTimer:20
+  - delay 1
+  - message{m="&7&l[ &e&l<mob.name> &7&l] &f&l>> &e&l冷看三界之争"} @PlayersInRadius{r=100}
+  - delay 10
+  - damage{a=4000000000000;i=true;pk=true} @LivingEntitiesInRadius{r=50}
+  - effect:particles{particle=largesmoke;amount=205;hS=3;vS=3;speed=0.5} @self
+  - delay 1
+  - effect:particlering{particle=flame;radius=5;points=80;amount=1;hS=1;vS=0} @LivingEntitiesInRadius{r=10}
+  - delay 1
+  - message{m="&7&l[ &e&l<mob.name> &7&l] &f&l>> &e&l笑看吾之成就"} @PlayersInRadius{r=100}
+  - delay 10
+  - effect:particlering{particle=cloud;radius=5;points=80;y=0.3;amount=1;hS=1;vS=0} @Self
+  - delay 1
+  - effect:particlering{particle=cloud;radius=4;points=80;y=0.3;amount=1;hS=1;vS=0} @Self
+  - delay 1
+  - effect:particlering{particle=cloud;radius=3;points=80;y=0.3;amount=1;hS=1;vS=0} @Self
+  - delay 1
+  - effect:particlering{particle=cloud;radius=2;points=80;y=0.3;amount=1;hS=1;vS=0} @Self
+  - delay 1
+  - effect:particlering{particle=cloud;radius=1;points=80;y=0.3;amount=1;hS=1;vS=0} @Self
+  - delay 1
+  - effect:particles{particle=flame;amount=100;hS=2;vS=3;speed=0.2} @self
+  - effect:particles{particle=lava;amount=100;hS=3;vS=4;speed=0.2} @self
+  - effect:particles{particle=cloud;amount=100;hS=4;vS=5;speed=0.2} @self
+  - effect:particles{particle=witchMagic;amount=100;hS=5;vS=6;speed=0.2} @self
+  - effect:particles{particle=sweepAttack;amount=100;hS=6;vS=7;speed=0.2} @self
+  - effect:particles{particle=fireworksSpark;amount=100;hS=7;vS=8;speed=0.2} @self
+  - damage{a=6000000000000;i=true;pk=true} @LivingEntitiesInRadius{r=50}
+  - delay 1
+  - damage{a=3000000000000;i=true;pk=true} @LivingEntitiesInRadius{r=50}
+  - effect:particlering{particle=flame;radius=20;points=32;amount=1;hS=1;vS=0} @LivingEntitiesInRadius{r=30}
+  - delay 1
+  - potion{type=SLOW;d=20;l=9} @LivingEntitiesInRadius{r=30}
+  - effect:particles{particle=largesmoke;amount=205;hS=3;vS=3;speed=0.5} @self
+  - delay 1
+  - message{m="&7&l[ &e&l<mob.name> &7&l] &f&l>> &e&l与世争锋"} @PlayersInRadius{r=100}
+  - delay 10
+  - effect:lightning @LivingEntitiesInRadius
+  - effect:particles{particle=largesmoke;amount=205;hS=3;vS=3;speed=0.5} @self
+  - delay 1
+  - effect:particlering{particle=flame;radius=20;points=32;amount=1;hS=1;vS=0} @Self
+  - delay 1
+  - effect:particlering{particle=flame;radius=20;points=32;amount=1;hS=1;vS=0} @LivingEntitiesInRadius{r=10}
+  - delay 1
+  - message{m="&7&l[ &e&l<mob.name> &7&l] &f&l>> &e&l无畏上魂"} @PlayersInRadius{r=100}
+  - delay 10
+  - effect:lightning @LivingEntitiesInRadius
+  - effect:lightning @LivingEntitiesInRadius
+  - effect:lightning @LivingEntitiesInRadius
+  - damage{a=3000000000000;i=true;pk=true} @LivingEntitiesInRadius{r=50}
+  - effect:particles{particle=largesmoke;amount=205;hS=3;vS=3;speed=0.5} @LIR{r=10}
+  - delay 1
+  - effect:particlering{particle=flame;radius=20;points=32;amount=1;hS=1;vS=0} @LivingEntitiesInRadius{r=10}
+  - delay 1
+  - damage{a=3000000000000;i=true;pk=true} @LivingEntitiesInRadius{r=50}
+  - effect:particles{particle=largesmoke;amount=205;hS=3;vS=3;speed=0.5} @self
+  - effect:particlering{particle=flame;radius=20;points=32;amount=1;hS=1;vS=0} @Self
+  - delay 1
+  - effect:particlering{particle=flame;radius=20;points=32;amount=1;hS=1;vS=0} @LivingEntitiesInRadius{r=10}
+  - delay 1
+  - message{m="&7&l[ &e&l<mob.name> &7&l] &f&l>> &e&l灭!"} @PlayersInRadius{r=100}
+  - delay 10
+  - effect:particlering{particle=cloud;radius=5;points=80;y=0.3;amount=1;hS=1;vS=0} @Self
+  - delay 1
+  - effect:particlering{particle=cloud;radius=4;points=80;y=0.3;amount=1;hS=1;vS=0} @Self
+  - delay 1
+  - effect:particlering{particle=cloud;radius=3;points=80;y=0.3;amount=1;hS=1;vS=0} @Self
+  - delay 1
+  - effect:particlering{particle=cloud;radius=2;points=80;y=0.3;amount=1;hS=1;vS=0} @Self
+  - delay 1
+  - effect:particlering{particle=cloud;radius=1;points=80;y=0.3;amount=1;hS=1;vS=0} @Self
+  - delay 1
+  - effect:particles{particle=flame;amount=100;hS=2;vS=3;speed=0.2} @self
+  - effect:particles{particle=lava;amount=100;hS=3;vS=4;speed=0.2} @self
+  - effect:particles{particle=cloud;amount=100;hS=4;vS=5;speed=0.2} @self
+  - effect:particles{particle=witchMagic;amount=100;hS=5;vS=6;speed=0.2} @self
+  - effect:particles{particle=sweepAttack;amount=100;hS=6;vS=7;speed=0.2} @self
+  - effect:particles{particle=fireworksSpark;amount=100;hS=7;vS=8;speed=0.2} @self
+  - damage{a=6000000000000;i=true;pk=true} @LivingEntitiesInRadius{r=50}
+  - delay 1
+  - effect:particles{particle=largesmoke;amount=205;hS=3;vS=3;speed=0.5} @LivingEntitiesInRadius{r=10}
+  - delay 1
+  - effect:explosion @self
+  - delay 5
+  - effect:explosion @self
+  - delay 5
+  - effect:explosion @self
+  - delay 5
+  - effect:explosion @self
+  - delay 5
+  - effect:explosion @self
+  - delay 5
+  - damage{a=6000000000000;i=true;pk=true} @LivingEntitiesInRadius{r=50}
+  - effect:particles{particle=largesmoke;amount=205;hS=3;vS=3;speed=0.5} @LivingEntitiesInRadius{r=10}
+  - delay 1
+  - effect:ender @self ~onTimer:10
+  - delay 1
+  - effect:lightning @Ring{radius=5;points=80}
+  - effect:lightning @Ring{radius=10;points=80}
+  - effect:lightning @Ring{radius=15;points=80}
+  - effect:lightning @RLNTE{amount=50;radius=30;spacing=1.5;minradius=2}
+  - lightning{d=4000000000000} @EntitiesInRadius{r=50}
+  - potion{type=SPEED;d=200;l=3} @self
+  - damage{a=100000000000000;i=true} @LivingEntitiesInRadius{r=10}
+  - effect:particles{particle=largesmoke;amount=205;hS=2;vS=2;speed=0.5} @LivingEntitiesInRadius{r=10}
+  - delay 5
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &e&l技能冷却中!!请等待100秒!!"}
+  - delay 2000
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &e&l技能冷却完毕!!"}
+独角兽の力:
+  Cooldown: 200
+  Skills:
+  - sendtitle{title="&d&l≮&0?&f&l<&a&8&k2&a[ &c<mob.name> &a]&8&k2&f&l>&0?&d&l≯";subtitle="&7&l< &e&l一袋米我要扛几楼! &7&l>";d=300}
+  - effect:explosion @Self
+  - effect:lightning @Self
+  - effect:particles{p=flame;a=500;hS=3;vS=4;speed=0.01;yOffset=0.7} @Self
+  - effect:particles{p=lava;a=500;hS=3;vS=4;speed=0.01;yOffset=0.7} @Self
+  - effect:particles{p=dragonbreath;a=500;hS=3;vS=4;speed=0.01;yOffset=0.7} @Self
+  - effect:particlering{p=flame;a=20;hS=0;vS=0;radius=3;points=32;yOffset=0.7;speed=0} @Self
+  - damage{a=30000000000;i=true;pk=true} @LivingEntitiesInRadius{r=30}
+  - delay 20
+  - sendtitle{title="&d&l≮&0?&f&l<&a&8&k2&a[ &c<mob.name> &a]&8&k2&f&l>&0?&d&l≯";subtitle="&7&l< &e&l一袋米我要扛二楼! &7&l>";d=300}
+  - effect:explosion @Self
+  - effect:lightning @Self
+  - effect:particles{p=flame;a=500;hS=3;vS=4;speed=0.01;yOffset=0.7} @Self
+  - effect:particles{p=lava;a=500;hS=3;vS=4;speed=0.01;yOffset=0.7} @Self
+  - effect:particles{p=dragonbreath;a=500;hS=3;vS=4;speed=0.01;yOffset=0.7} @Self
+  - effect:particlering{p=flame;a=20;hS=0;vS=0;radius=3;points=32;yOffset=0.7;speed=0} @Self
+  - damage{a=30000000000;i=true;pk=true} @LivingEntitiesInRadius{r=30}
+  - delay 30
+  - sendtitle{title="&d&l≮&0?&f&l<&a&8&k2&a[ &c<mob.name> &a]&8&k2&f&l>&0?&d&l≯";subtitle="&7&l< &e&l角遁! &7&l>";d=300}
+  - effect:explosion @Self
+  - effect:lightning @Self
+  - effect:particles{p=flame;a=500;hS=3;vS=4;speed=0.01;yOffset=0.7} @Self
+  - effect:particles{p=lava;a=500;hS=3;vS=4;speed=0.01;yOffset=0.7} @Self
+  - effect:particles{p=dragonbreath;a=500;hS=3;vS=4;speed=0.01;yOffset=0.7} @Self
+  - effect:particlering{p=flame;a=20;hS=0;vS=0;radius=3;points=32;yOffset=0.7;speed=0} @Self
+  - damage{a=30000000000;i=true;pk=true} @LivingEntitiesInRadius{r=30}
+  - delay 20
+  - sendtitle{title="&d&l≮&0?&f&l<&a&8&k2&a[ &c<mob.name> &a]&8&k2&f&l>&0?&d&l≯";subtitle="&7&l< &e&l角从地出之术! &7&l>";d=300}
+  - effect:explosion @Self
+  - effect:lightning @Self
+  - effect:particles{p=flame;a=500;hS=3;vS=4;speed=0.01;yOffset=0.7} @Self
+  - effect:particles{p=lava;a=500;hS=3;vS=4;speed=0.01;yOffset=0.7} @Self
+  - effect:particles{p=dragonbreath;a=500;hS=3;vS=4;speed=0.01;yOffset=0.7} @Self
+  - effect:particlering{p=flame;a=20;hS=0;vS=0;radius=3;points=32;yOffset=0.7;speed=0} @Self
+  - damage{a=30000000000;i=true;pk=true} @LivingEntitiesInRadius{r=30}
+  - delay 30
+  - sendtitle{title="&d&l≮&0?&f&l<&a&8&k2&a[ &c<mob.name> &a]&8&k2&f&l>&0?&d&l≯";subtitle="&7&l< &e&l神罗天征!!!! &7&l>";d=300}
+  - effect:explosion @Self
+  - effect:lightning @Self
+  - effect:particles{p=flame;a=500;hS=3;vS=4;speed=0.01;yOffset=0.7} @Self
+  - effect:particles{p=lava;a=500;hS=3;vS=4;speed=0.01;yOffset=0.7} @Self
+  - effect:particles{p=dragonbreath;a=500;hS=3;vS=4;speed=0.01;yOffset=0.7} @Self
+  - effect:particlering{p=flame;a=20;hS=0;vS=0;radius=3;points=32;yOffset=0.7;speed=0} @Self
+  - damage{a=30000000000;i=true;pk=true} @LivingEntitiesInRadius{r=30}
+  - delay 40
+  - effect:explosion @Self
+  - effect:lightning @Self
+  - effect:particles{p=flame;a=500;hS=3;vS=4;speed=0.01;yOffset=0.7} @LivingEntitiesInRadius{r=30}
+  - effect:particles{p=lava;a=500;hS=3;vS=4;speed=0.01;yOffset=0.7} @LivingEntitiesInRadius{r=30}
+  - effect:particles{p=dragonbreath;a=500;hS=3;vS=4;speed=0.01;yOffset=0.7} @LivingEntitiesInRadius{r=30}
+  - effect:particlering{p=flame;a=20;hS=0;vS=0;radius=3;points=32;yOffset=0.7;speed=0} @LivingEntitiesInRadius{r=30}
+  - damage{a=30000000000;i=true;pk=true} @LivingEntitiesInRadius{r=30}
+  - delay 5
+  - effect:lightning @Self
+  - effect:lightning @Ring{radius=10;points=80}
+  - damage{a=30000000000;i=true;pk=true} @LivingEntitiesInRadius{r=30}
+  - effect:explosion @Self
+  - effect:lightning @Self
+  - effect:particles{p=flame;a=500;hS=3;vS=4;speed=0.01;yOffset=0.7} @LivingEntitiesInRadius{r=30}
+  - effect:particles{p=lava;a=500;hS=3;vS=4;speed=0.01;yOffset=0.7} @LivingEntitiesInRadius{r=30}
+  - effect:particles{p=dragonbreath;a=500;hS=3;vS=4;speed=0.01;yOffset=0.7} @LivingEntitiesInRadius{r=30}
+  - effect:particlering{p=flame;a=20;hS=0;vS=0;radius=3;points=32;yOffset=0.7;speed=0} @LivingEntitiesInRadius{r=30}
+  - damage{a=30000000000;i=true;pk=true} @LivingEntitiesInRadius{r=30}
+  - delay 5
+  - effect:lightning @Self
+  - effect:lightning @Ring{radius=10;points=80}
+  - damage{a=30000000000;i=true;pk=true} @LivingEntitiesInRadius{r=30}
+  - effect:explosion @Self
+  - effect:lightning @Self
+  - effect:particles{p=flame;a=500;hS=3;vS=4;speed=0.01;yOffset=0.7} @LivingEntitiesInRadius{r=30}
+  - effect:particles{p=lava;a=500;hS=3;vS=4;speed=0.01;yOffset=0.7} @LivingEntitiesInRadius{r=30}
+  - effect:particles{p=dragonbreath;a=500;hS=3;vS=4;speed=0.01;yOffset=0.7} @LivingEntitiesInRadius{r=30}
+  - effect:particlering{p=flame;a=20;hS=0;vS=0;radius=3;points=32;yOffset=0.7;speed=0} @LivingEntitiesInRadius{r=30}
+  - damage{a=30000000000;i=true;pk=true} @LivingEntitiesInRadius{r=30}
+  - delay 5
+  - effect:lightning @Self
+  - effect:lightning @Ring{radius=10;points=80}
+  - damage{a=30000000000;i=true;pk=true} @LivingEntitiesInRadius{r=30}
+  - delay 5
+  - effect:particles{p=flame;a=500;hS=3;vS=4;speed=0.01;yOffset=0.7} @Self
+  - effect:particles{p=lava;a=500;hS=3;vS=4;speed=0.01;yOffset=0.7} @Self
+  - effect:particles{p=dragonbreath;a=500;hS=3;vS=4;speed=0.01;yOffset=0.7} @Self
+  - effect:particlering{p=flame;a=20;hS=0;vS=0;radius=3;points=32;yOffset=0.7;speed=0} @Self
+  - delay 5
+  - effect:particles{p=flame;a=3000;hS=3;vS=4;speed=1;yOffset=0.7} @Self
+  - damage{a=50000000000;i=true;pk=true} @LivingEntitiesInRadius{r=50}
+  - delay 5
+  - effect:particles{p=flame;a=500;hS=3;vS=4;speed=0.01;yOffset=0.7} @Self
+  - effect:particles{p=lava;a=500;hS=3;vS=4;speed=0.01;yOffset=0.7} @Self
+  - effect:particles{p=dragonbreath;a=500;hS=3;vS=4;speed=0.01;yOffset=0.7} @Self
+  - effect:particlering{p=flame;a=20;hS=0;vS=0;radius=3;points=32;yOffset=0.7;speed=0} @Self
+  - effect:particles{p=flame;a=3000;hS=3;vS=4;speed=1;yOffset=0.7} @Self
+  - damage{a=80000000000;i=true;pk=true} @LivingEntitiesInRadius{r=50}
+  - delay 5
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &e&l技能冷却中!!请等待200秒!!"}
+  - delay 4000
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &e&l技能冷却完毕!!"}
+横扫:
+  Cooldown: 2
+  Skills:
+  - effect:particles{p=flame;a=100;hS=3;vS=4;speed=0.01;yOffset=0.7} @Self
+  - effect:particles{p=lava;a=100;hS=3;vS=4;speed=0.01;yOffset=0.7} @Self
+  - damage{a=2000000000000;i=true;pk=true} @LivingEntitiesInRadius{r=10}
+  - delay 1
+  - effect:particles{p=flame;a=100;hS=3;vS=4;speed=0.01;yOffset=0.7} @Self
+  - effect:particles{p=lava;a=100;hS=3;vS=4;speed=0.01;yOffset=0.7} @Self
+  - damage{a=2000000000000;i=true;pk=true} @LivingEntitiesInRadius{r=10}
+  - delay 1
+  - effect:particles{p=flame;a=100;hS=3;vS=4;speed=0.01;yOffset=0.7} @Self
+  - effect:particles{p=lava;a=100;hS=3;vS=4;speed=0.01;yOffset=0.7} @Self
+  - damage{a=2000000000000;i=true;pk=true} @LivingEntitiesInRadius{r=10}
+  - delay 1
+  - effect:particles{p=flame;a=100;hS=3;vS=4;speed=0.01;yOffset=0.7} @Self
+  - effect:particles{p=lava;a=100;hS=3;vS=4;speed=0.01;yOffset=0.7} @Self
+  - damage{a=2000000000000;i=true;pk=true} @LivingEntitiesInRadius{r=10}
+  - delay 1
+  - effect:particles{p=flame;a=100;hS=3;vS=4;speed=0.01;yOffset=0.7} @Self
+  - effect:particles{p=lava;a=100;hS=3;vS=4;speed=0.01;yOffset=0.7} @Self
+  - damage{a=4000000000000;i=true;pk=true} @LivingEntitiesInRadius{r=10}

@@ -1,0 +1,48 @@
+低级特效:
+  Cooldown: 0
+  Skills:
+  - effect:particlebox{particle=flame;amount=50;radius=3}
+中级特效:
+  Cooldown: 0
+  Skills:
+  - effect:particlebox{particle=flame;amount=100;radius=4}
+高级特效:
+  Cooldown: 0
+  Skills:
+  - effect:particlebox{particle=flame;amount=300;radius=5}
+龙卷特效:
+  Cooldown: 0
+  Skills:
+  - effect:particletornado{p=flame;cp=flame;mr=1;h=0.5;i=1;d=100;rs=0.2;sh=2;cs=0;ca=0;chs=1;cvs=1.5;cps=5;cyo=0.5}
+赤色特效:
+  Cooldown: 0
+  Skills:
+  - effect:particlesphere{p=reddust;color=#FF0000;a=300;radius=1;y=0.5}
+橙色特效:
+  Cooldown: 0
+  Skills:
+  - effect:particlesphere{p=reddust;color=#FFA500;a=300;radius=1;y=0.5}
+黄色特效:
+  Cooldown: 0
+  Skills:
+  - effect:particlesphere{p=reddust;color=#FFFF00;a=300;radius=1;y=0.5}
+绿色特效:
+  Cooldown: 0
+  Skills:
+  - effect:particlesphere{p=reddust;color=#00FF00;a=300;radius=1;y=0.5}
+青色特效:
+  Cooldown: 0
+  Skills:
+  - effect:particlesphere{p=reddust;color=#00FFFF;a=300;radius=1;y=0.5}
+蓝色特效:
+  Cooldown: 0
+  Skills:
+  - effect:particlesphere{p=reddust;color=#0000FF;a=300;radius=1.5;y=0.5}
+紫色特效:
+  Cooldown: 0
+  Skills:
+  - effect:particlesphere{p=reddust;color=#A020F0;a=300;radius=1;y=0.5}
+黑色特效:
+  Cooldown: 0
+  Skills:
+  - effect:particlesphere{p=reddust;color=#000000;a=300;radius=1;y=0.5}

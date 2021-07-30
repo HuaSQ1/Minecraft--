@@ -1,0 +1,100 @@
+先天魂力1:
+  Cooldown: 10
+  Skills:
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f你的先天魂力！"}
+  - delay 10
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f是！"}
+  - delay 10
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f1级！"}
+  - command{c="sl add <mob.name> 500"}
+  - delay 20
+先天魂力2:
+  Cooldown: 10
+  Skills:
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f你的先天魂力！"}
+  - delay 10
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f是！"}
+  - delay 10
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f2级！"}
+  - command{c="sl add <mob.name> 1000"}
+  - delay 20
+先天魂力3:
+  Cooldown: 10
+  Skills:
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f你的先天魂力！"}
+  - delay 10
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f是！"}
+  - delay 10
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f3级！"}
+  - command{c="sl add <mob.name> 1500"}
+  - delay 20
+先天魂力4:
+  Cooldown: 10
+  Skills:
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f你的先天魂力！"}
+  - delay 10
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f是！"}
+  - delay 10
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f4级！"}
+  - command{c="sl add <mob.name> 2000"}
+  - delay 20
+先天魂力5:
+  Cooldown: 10
+  Skills:
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f你的先天魂力！"}
+  - delay 10
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f是！"}
+  - delay 10
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f5级！"}
+  - command{c="sl add <mob.name> 2500"}
+  - delay 20
+先天魂力6:
+  Cooldown: 10
+  Skills:
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f你的先天魂力！"}
+  - delay 10
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f是！"}
+  - delay 10
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f6级！"}
+  - command{c="sl add <mob.name> 3000"}
+  - delay 20
+先天魂力7:
+  Cooldown: 10
+  Skills:
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f你的先天魂力！"}
+  - delay 10
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f是！"}
+  - delay 10
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f7级！"}
+  - command{c="sl add <mob.name> 3500"}
+  - delay 20
+先天魂力8:
+  Cooldown: 10
+  Skills:
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f你的先天魂力！"}
+  - delay 10
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f是！"}
+  - delay 10
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f8级！"}
+  - command{c="sl add <mob.name> 4000"}
+  - delay 20
+先天魂力9:
+  Cooldown: 10
+  Skills:
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f你的先天魂力！"}
+  - delay 10
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f是！"}
+  - delay 10
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f9级！"}
+  - command{c="sl add <mob.name> 4500"}
+  - delay 20
+先天魂力10:
+  Cooldown: 10
+  Skills:
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f你的先天魂力！"}
+  - delay 10
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f是！"}
+  - delay 10
+  - message{m="&7&l[ &c&l系统 &7&l] &f&l>> &f10级！先天满魂力！！！！"}
+  - command{c="sl add <mob.name> 5000"}
+  - delay 20

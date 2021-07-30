@@ -1,0 +1,405 @@
+# For more information, check out the plugin manual or join us on Discord:
+# http://www.mythicmobs.net
+#  
+神域兵长布鲁克远攻:
+  Cooldown: 0
+  Conditions:
+  - targetwithin 6
+  Skills:
+  - damage{amount=30000;ignoreArmor=true}
+神域骑士克劳德远攻:
+  Cooldown: 0
+  Conditions:
+  - targetwithin 6
+  Skills:
+  - damage{amount=50000;ignoreArmor=true}
+神域将领杰佛理远攻:
+  Cooldown: 0
+  Conditions:
+  - targetwithin 6
+  Skills:
+  - damage{amount=100000;ignoreArmor=true}
+神域兵长布鲁克回血:
+  Cooldown: 0
+  Skills:
+  - heal{amount=1000000}
+神域将领杰佛理回血:
+  Cooldown: 0
+  Skills:
+  - heal{amount=2000000}
+神域骑士克劳德回血:
+  Cooldown: 0
+  Skills:
+  - heal{amount=1500000}
+神域兵长布鲁克特效:
+  Cooldown: 0
+  Skills:
+  - effect:particlebox{particle=flame;amount=100;radius=6}
+神域兵长布鲁克群攻:
+  Skills:
+  - missile{ot=神域兵长布鲁克Homer_TICK;oh=神域兵长布鲁克Homer_HIT;v=10;i=1;hR=1;vR=1;in=0.75}
+神域兵长布鲁克Homer_TICK:
+  Skills:
+  - effect:particles{p=flame;a=1} @origin
+神域兵长布鲁克Homer_HIT:
+  Skills:
+  - effect:particles{p=lava;a=50;hS=1;vS=1}
+  - effect:sound{s=mob.endermen.scream;v=1;p=0}
+  - damage{a=50000;i=true}
+神域兵长布鲁克投掷:
+  Skills:
+#  - shoot{type=ARROW;v=2;damage=25000;pav=false;i=4;vspread=400;hspread=400} @PlayersInRadius{r=40}
+  - shootpotion{type=SLOW;duration=1000;level=4;velocity=5} @PlayersInRadius{r=40}
+神域卫兵远攻:
+  Cooldown: 0
+  Conditions:
+  - targetwithin 4
+  Skills:
+  - damage{amount=5000;ignoreArmor=true}
+神域卫兵回血:
+  Cooldown: 0
+  Skills:
+  - heal{amount=10000}
+神域弓箭手远攻:
+  Cooldown: 0
+  Conditions:
+  - targetwithin 15
+  Skills:
+  - damage{amount=20000;ignoreArmor=true}
+神域弓箭手回血:
+  Cooldown: 0
+  Skills:
+  - heal{amount=100000}
+神域守卫远攻:
+  Cooldown: 0
+  Conditions:
+  - targetwithin 5
+  Skills:
+  - damage{amount=50000;ignoreArmor=true}
+神域守卫回血:
+  Cooldown: 0
+  Skills:
+  - heal{amount=100000}
+神域守卫冲锋:
+  Cooldown: 10
+  Conditions:
+  - targetnotwithin 10
+  Skills:
+  - p{s=神域守卫冲锋Tick;onHitSkill=神域守卫冲锋Hit;onEndSkill=神域守卫冲锋End;se=false;v=32;i=1;r=1;mr=16;hp=true;hnp=true}
+神域守卫冲锋Tick:
+  Skills:
+  - effect:particles{p=cloud;a=20;hs=0.44;vs=0.05;s=0} @origin
+  - effect:sound{s=mob.chicken.step;p=0.5;v=1} @origin
+  - throw{v=1;vy=2} @ENO{r=2}
+  - teleport @origin
+神域守卫冲锋Hit:
+  Skills:
+  - throw{v=10}
+神域守卫冲锋End:
+  Skills:
+  - particles{p=smoke;a=20;hs=0.1;vs=0.1;s=1} @origin
+  - particles{p=flame;a=20;hs=0.1;vs=0.1;s=1} @origin
+神域兵长布鲁克冲锋:
+  Cooldown: 10
+  Conditions:
+  - targetnotwithin 3
+  Skills:
+  - p{s=神域兵长布鲁克冲锋Tick;onHitSkill=神域兵长布鲁克冲锋Hit;onEndSkill=神域兵长布鲁克冲锋End;se=false;v=50;i=1;r=1;mr=30;hp=true;hnp=true}
+神域兵长布鲁克冲锋Tick:
+  Skills:
+  - effect:particles{p=cloud;a=20;hs=0.44;vs=0.05;s=0} @origin
+  - effect:sound{s=mob.chicken.step;p=0.5;v=1} @origin
+  - throw{v=1;vy=2} @ENO{r=2}
+  - teleport @origin
+神域兵长布鲁克冲锋Hit:
+  Skills:
+  - throw{v=10}
+神域兵长布鲁克冲锋End:
+  Skills:
+  - particles{p=smoke;a=20;hs=0.1;vs=0.1;s=1} @origin
+  - particles{p=flame;a=20;hs=0.1;vs=0.1;s=1} @origin
+神域魔法师Rally:
+  Cooldown: 0
+  Skills:
+  - rally{type=神域守卫;hradius=16;vradius=4}
+神域魔法师MagicMissile:
+  Cooldown: 0
+  Conditions:
+  - targetwithin 30
+  Skills:
+  - gcd{ticks=60}
+  - potion{type=SLOW;d=60;lvl=4} @self
+  - effect:particles{p=mobSpell;a=20;hS=0.5;vS=1;y=1;s=0} @self
+  - delay 10
+  - effect:particles{p=mobSpell;a=20;hS=0.5;vS=1;y=1;s=0} @self
+  - delay 10
+  - effect:particles{p=mobSpell;a=20;hS=0.5;vS=1;y=1;s=0} @self
+  - delay 10
+  - effect:particles{p=mobSpell;a=20;hS=0.5;vS=1;y=1;s=0} @self
+  - delay 10
+  - effect:particles{p=mobSpell;a=20;hS=0.5;vS=1;y=1;s=0} @self
+  - delay 10
+  - effect:particles{p=mobSpell;a=20;hS=0.5;vS=1;y=1;s=0} @self
+  - delay 10
+  - effect:sound{s=entity.blaze.hurt;p=1.5;v=0.6} @self
+  - missile{onTick=神域魔法师Tick;onHit=神域魔法师Hit;onEnd=神域魔法师End;v=12;i=1;in=6} @target
+神域魔法师Tick:
+  Skills:
+  - effect:particles{p=mobSpell;a=10;hS=0.06;vS=0.06;s=0} @origin
+  - effect:particles{p=mobSpellAmbient;a=2;hS=0.1;vS=0.1;s=0.01} @origin
+  - effect:particles{p=enchantmenttable;a=3;hS=0.3;vS=0.3;s=1.5} @origin
+神域魔法师Hit:
+  Skills:
+  - damage{amount=100000;ignoreArmor=true}
+神域魔法师End:
+  Skills:
+  - effect:sound{s=entity.blaze.hurt;p=0.5;v=2}
+  - effect:particles{p=mobSpellAmbient;a=3;hS=0.1;vS=0.1;s=0.2} @origin
+  - effect:particles{p=mobSpell;a=10;hS=0.05;vS=0.05;s=0.2} @origin
+  - effect:particles{p=enchantmenttable;a=30;hS=0.05;vS=0.05;s=1.5} @origin
+神域骑士闪现斩击:
+  Cooldown: 6
+  Skills:
+  - teleport{spreadH=10} @self
+  - effect:sound{s=entity.endermen.teleport;v=3;p=1} @self
+  - p{s=神域骑士闪现斩击2Tick;onHitSkill=神域骑士闪现斩击2Hit;onEndSkill=神域骑士闪现斩击2End;se=true;stopatblock=false;v=15;i=1;r=1;mr=30;hp=true;hnp=true}
+  - delay 5
+  - p{s=神域骑士闪现斩击2Tick;onHitSkill=神域骑士闪现斩击2Hit;onEndSkill=神域骑士闪现斩击2End;se=true;stopatblock=false;v=15;i=1;r=1;mr=30;hp=true;hnp=true}
+  - delay 5
+  - p{s=神域骑士闪现斩击2Tick;onHitSkill=神域骑士闪现斩击2Hit;onEndSkill=神域骑士闪现斩击2End;se=true;stopatblock=false;v=15;i=1;r=1;mr=30;hp=true;hnp=true}
+  - delay 15
+  - p{s=神域骑士闪现斩击Tick;onHitSkill=神域骑士闪现斩击Hit;onEndSkill=神域骑士闪现斩击End;se=f;v=30;i=1;r=1;mr=15;hp=true;hnp=true}
+  - effect:sound{s=entity.endermen.teleport;v=3;p=1} @self
+神域骑士闪现斩击Tick:
+  Skills:
+  - effect:particles{p=cloud;a=10;hs=0.44;vs=0.4;s=0} @origin
+  - teleport @origin
+神域骑士闪现斩击2Tick:
+  Skills:
+  - effect:particles{p=Large Explode;a=10;hs=0;vs=0;s=0} @origin
+神域骑士闪现斩击Hit:
+  Skills:
+  - throw{v=10} @Target
+神域骑士闪现斩击2Hit:
+  Skills:
+  - damage{a=200000;i=true} 
+神域骑士闪现斩击End:
+  Skills:
+  - particles{p=Large Explode;a=10;hs=0.1;vs=0.1;s=1} @origin
+  - particles{p=lava;a=100;hs=1;vs=1;s=1} @origin
+  - damage{a=300000;i=true} @PlayersInRadius{r=10}
+神域骑士闪现斩击2End:
+  Skills:
+  - particles{p=Large Explode;a=10;hs=0.1;vs=0.1;s=1} @origin
+  - particles{p=lava;a=100;hs=1;vs=1;s=1} @origin
+神域骑士闪现脱离:
+  Cooldown: 10
+  Skills:
+  - teleport{spreadH=10} @self
+  - effect:sound{s=entity.endermen.teleport;v=3;p=1} @self
+  - delay 20
+  - p{s=神域骑士闪现脱离Tick;onHitSkill=神域骑士闪现脱离Hit;onEndSkill=神域骑士闪现脱离End;se=true;v=15;i=1;r=1;mr=30;hp=true;hnp=true}
+神域骑士闪现脱离Tick:
+  Skills:
+  - effect:particles{p=Large Explode;a=10;hs=0;vs=0;s=0} @origin
+神域骑士闪现脱离Hit:
+  Skills:
+  - damage{a=300000;i=true} 
+神域骑士闪现脱离End:
+  Skills:
+  - particles{p=Large Explode;a=10;hs=0.1;vs=0.1;s=1} @origin
+  - particles{p=lava;a=100;hs=1;vs=1;s=1} @origin
+神域骑士一闪:
+  Cooldown: 10
+  Skills:
+  - teleport{spreadH=10} @self
+  - effect:sound{s=entity.endermen.teleport;v=3;p=1} @self
+  - delay 40
+  - p{s=神域骑士一闪Tick;onHitSkill=神域骑士一闪Hit;onEndSkill=神域骑士一闪End;se=f;v=30;i=1;r=1;mr=15;hp=true;hnp=true}
+神域骑士一闪Tick:
+  Skills:
+  - effect:particles{p=cloud;a=10;hs=0.44;vs=0.4;s=0} @origin
+  - teleport @origin
+神域骑士一闪Hit:
+  Skills:
+  - throw{v=10} @Target
+神域骑士一闪End:
+  Skills:
+  - particles{p=Large Explode;a=10;hs=0.1;vs=0.1;s=1} @origin
+  - particles{p=lava;a=100;hs=1;vs=1;s=1} @origin
+  - damage{a=300000;i=true} @PlayersInRadius{r=10}
+神域骑士爆发群攻:
+  Cooldown: 5
+  Skills:
+  - missile{ot=神域骑士爆发群攻Homer_TICK;oh=神域骑士爆发群攻Homer_HIT;v=20;i=1;hR=1;vR=1;in=0.75}
+  - delay 5
+  - missile{ot=神域骑士爆发群攻Homer_TICK;oh=神域骑士爆发群攻Homer_HIT;v=20;i=1;hR=1;vR=1;in=0.75}
+  - delay 5
+  - missile{ot=神域骑士爆发群攻Homer_TICK;oh=神域骑士爆发群攻Homer_HIT;v=20;i=1;hR=1;vR=1;in=0.75}
+  - delay 5
+  - missile{ot=神域骑士爆发群攻Homer_TICK;oh=神域骑士爆发群攻Homer_HIT;v=20;i=1;hR=1;vR=1;in=0.75}
+  - delay 5
+  - missile{ot=神域骑士爆发群攻Homer_TICK;oh=神域骑士爆发群攻Homer_HIT;v=20;i=1;hR=1;vR=1;in=0.75}
+神域骑士爆发群攻Homer_TICK:
+  Skills:
+  - effect:particles{p=flame;a=1} @origin
+神域骑士爆发群攻Homer_HIT:
+  Skills:
+  - effect:particles{p=lava;a=50;hS=1;vS=1}
+  - effect:explosion
+  - damage{a=50000;i=true}
+鬼闪:
+  Cooldown: 20
+  Skills:
+  - teleport{spreadH=6} @Target
+  - delay 10
+  - p{s=鬼闪Tick;onHitSkill=鬼闪Hit;onEndSkill=鬼闪End;se=f;stopatblock=f;v=20;i=2;r=2;mr=10;hp=true;hnp=true}
+  - effect:sound{s=entity.endermen.teleport;v=3;p=1} @self
+  - potion{type=slow;duration=60;level=9} @Self 
+鬼闪Tick:
+  Skills:
+  - effect:particles{p=portal;a=50;hs=1;vs=1;s=0} @origin
+  - teleport @origin
+鬼闪Hit:
+  Skills:
+  - potion{type=slow;duration=70;level=9} 
+  - potion{type=blindness;duration=70;level=9} 
+  - delay 60
+  - damage{a=500000;i=true}
+鬼闪End:
+  Skills:
+  - delay 60
+  - particles{p=Large Explode;a=50;hs=1;vs=1;s=1} @Target
+  - effect:explosion
+爆发群攻:
+  Cooldown: 5
+  Skills:
+  - missile{ot=爆发群攻Homer_TICK;oh=爆发群攻Homer_HIT;v=20;i=1;hR=1;vR=1;in=0.75}
+  - delay 5
+  - missile{ot=爆发群攻Homer_TICK;oh=爆发群攻Homer_HIT;v=20;i=1;hR=1;vR=1;in=0.75}
+  - delay 5
+  - missile{ot=爆发群攻Homer_TICK;oh=爆发群攻Homer_HIT;v=20;i=1;hR=1;vR=1;in=0.75}
+  - delay 5
+  - missile{ot=爆发群攻Homer_TICK;oh=爆发群攻Homer_HIT;v=20;i=1;hR=1;vR=1;in=0.75}
+  - delay 5
+  - missile{ot=爆发群攻Homer_TICK;oh=爆发群攻Homer_HIT;v=20;i=1;hR=1;vR=1;in=0.75}
+爆发群攻Homer_TICK:
+  Skills:
+  - effect:particles{p=endRod;a=1} @origin
+爆发群攻Homer_HIT:
+  Skills:
+  - effect:particles{p=lava;a=50;hS=0.5;vS=0.5}
+  - effect:explosion
+  - damage{a=65000;i=true}
+次元斩击:
+  Cooldown: 20
+  Skills:
+  - teleport{spreadH=10} @Target
+  - effect:sound{s=entity.endermen.teleport;v=3;p=1} @self
+  - delay 40
+  - p{s=次元斩击Tick;onHitSkill=次元斩击Hit;onEndSkill=次元斩击End;se=f;stopatblock=f;v=1;i=1;r=1;mr=60;hp=true;hnp=true}
+次元斩击Tick:
+  Skills:
+  - effect:particles{p=lava;a=5;hs=0.5;vs=0.5;s=0} @origin
+次元斩击Hit:
+  Skills:
+  - damage{a=500000;i=true}
+次元斩击End:
+  Skills:
+  - particles{p=portal;a=100;hs=1;vs=1;s=1} @origin
+次元闪击:
+  Cooldown: 10
+  Skills:
+  - teleport{spreadH=10} @Target
+  - effect:sound{s=entity.endermen.teleport;v=3;p=1} @self
+  - delay 40
+  - p{s=次元斩击Tick;onHitSkill=次元闪击Hit;onEndSkill=次元闪击End;se=f;stopatblock=f;v=1;i=1;r=1;mr=60;hp=true;hnp=true}
+次元闪击Tick:
+  Skills:
+  - effect:particles{p=lava;a=5;hs=0.5;vs=0.5;s=0} @origin
+次元闪击Hit:
+  Skills:
+  - damage{a=500000;i=true}
+次元闪击End:
+  Skills:
+  - particles{p=portal;a=100;hs=1;vs=1;s=1} @origin
+召唤圣灵:
+  Cooldown: 20
+  Skills:
+  - summon{mob=圣灵;amount=6;noise=20} @Self
+圣灵:
+  Cooldown: 30
+  Skills:
+  - projectile{onTick=圣灵IceBolt-Tick;onHit=圣灵IceBolt-Hit;v=6;i=1;hR=1;vR=1;mr=60}
+  - delay 20
+  - effect:explosion @self
+  - projectile{onTick=圣灵IceBolt-Tick;onHit=圣灵IceBolt-Hit;v=9;i=1;hR=1;vR=1}
+  - delay 20
+  - effect:explosion @self
+  - projectile{onTick=圣灵IceBolt-Tick;onHit=圣灵IceBolt-Hit;v=12;i=1;hR=1;vR=1}
+  - delay 20
+  - effect:explosion @self
+圣灵IceBolt-Tick:
+  Skills:
+  - effect:particles{p=Large Explode;amount=3;speed=0.2;hR=0.5;vR=0.5} @origin
+圣灵IceBolt-Hit:
+  Skills:
+  - damage{amount=300000;ignoreArmor=true}
+圣灵自杀:
+  Cooldown: 600
+  Skills:
+  - delay 300
+  - suicide
+召唤章鱼:
+  Cooldown: 30
+  Skills:
+  - summon{mob=自爆章鱼;amount=3;noise=6} @Self
+章鱼骑脸:
+  Cooldown: 60
+  Skills:
+  - mounttarget @PlayersInRadius{r=64}
+章鱼伤害:
+  Cooldown: 1
+  Skills:
+  - damage{amount=50000;ignoreArmor=true}
+  - potion{type=slow;duration=40;level=2}
+  - potion{type=confusion;duration=400;level=9}
+  - potion{type=blindness;duration=100;level=9}
+章鱼爆炸:
+  Cooldown: 60
+  Skills:
+  - delay 300
+  - damage{amount=9000000;ignoreArmor=true}
+  - delay 5
+  - effect:lightning @self
+  - effect:particletornado{p=hugeexplosion;cp=largeexplode;mr=6;h=0.5;i=1;d=10;rs=1;sh=2;cs=0;ca=0;chs=0.1;cvs=0.1;cps=1;cyo=1} @self
+  - effect:explosion @self
+  - delay 10
+  - suicide
+SmashAttack:
+  Cooldown: 8
+  Conditions:
+  - targetwithin 25
+  Skills:
+  - message{cooldown=30;m="<mob.name><&co> Hahahah! I will crush you, fool!"} @PlayersInRadius{r=40}
+  - teleport @target
+  - effect:sound{s=mob.endermen.portal;volume=1.0;pitch=0.5}
+  - delay 10
+  - damage{amount=5;ignorearmor=true} @PlayersInRadius{r=5}
+  - throw{velocity=10;velocityY=5} @PlayersInRadius{r=5}
+  - effect:explosion @Self
+SummonSkeletons:
+  Cooldown: 15
+  Skills:
+  - message{m="<mob.name><&co> Arise, my minions!"} @PlayersInRadius{r=40}
+  - delay 20
+  - summon{mob=SkeletalMinion;amount=2;noise=5} @Self
+  - delay 20
+  - summon{mob=SkeletalMinion;amount=2;noise=5} @Self
+  - delay 20
+  - summon{mob=SkeletalMinion;amount=2;noise=5} @Self
+AngrySludgePoison:
+  Cooldown: 10
+  Skills:
+  - potion{type=POISON;lvl=2;duration=100} @PlayersInRadius{r=15}
+  - effect:particles{p=happyVillager;amount=1000;hSpread=15;ySpread=1;speed=0;yOFfset=0.5} @Self
